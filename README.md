@@ -72,38 +72,21 @@ In addition to the attributes definition necessary to understand the data schema
 
 Only financial institutions acting as Account Servicing Payment Service Providers (ASPSP) are authorized to issue IBAN attestations. These institutions are considered the authentic source of account ownership information. Issuance may occur directly or through a delegated Qualified Electronic Attestation Authority (QEAA).
 
-The IBAN attestation is exclusively available to legal persons (companies). Applicants must demonstrate valid proof of identity, such as a Legal Person Identifier (LPID), within their organizational wallet.
+The issuance of IBAN attestations must comply with relevant EU regulatory and technical standards, including Payment Services Directive 2 (PSD2): Ensuring secure and standardized access to account information.
 
-Legal persons must submit a formal request to the ASPSP via secure and authenticated channels, such as an organizational wallet compatible with the EUDI Wallet Framework.
-
-The ASPSP verifies the provided bank account details against its internal records, ensuring they correspond to the legal entity making the request. Key validation steps include:
-- Verifying the IBAN format and association with the applicant.
-- Confirming the applicant's LPID and its linkage to the IBAN.
-
-Upon successful verification, the ASPSP issues the IBAN attestation as a verifiable credential. The attestation is signed or sealed using a qualified electronic signature (QES) or seal (QES Seal).
-
-**Requirements**:
-- An IBAN attestation can only be issued to organizational wallets compliant with the EUDI framework.
-- Attestations are valid solely for legal entities with a valid LPID.
-
-Verifying the IBAN format and association with the applicant.
-Confirming the applicant's LPID and its linkage to the IBAN.
-
-Then IBAN is a sensitive data that SHOULD be emitted only by a QTSP
-
-The Regulation specifies who is able to issue the EUCC to companies: “Companies could apply for such an EU Company Certificate, with national business registers or through the system of interconnection of registers […] Such an EU Company Certificate should be issued and certified by the national business registers.”
-
-To comply with the Regulation, only Business Registries are allowed to be the authentic source of the EUCC attestation, and they can decide to use a Pub-EAAs provider to issue it on their behalf.
+_L'attestation ne peut être émise u'a qqn qui a un accès au compt bancaire et pour valider cet accès les banques utilises login mdp + SCA,_ 
 
 In the EWC context, a generic attestation issuance process has been described by wallet providers in the pilots. Those controls and generic steps are described in [RFC-001](https://github.com/EWC-consortium/eudi-wallet-rfcs/blob/main/ewc-rfc001-issue-verifiable-credential.md).
 
-While different business registries have national processes, there is an agreement that the EUCC attestation can only be requested by companies having a valid LPID in their wallet. Therefore, this attestation can only be issued to an EUDI valid organizational wallet.
+The IBAN attestation can only be requested by companies having a valid LPID in their wallet. Therefore, this attestation can only be issued to an EUDI-compliant organizational wallet.
 
-## 3. EUCC Verification process
+## 3. IBAN Verification process
 
 In the EWC context, a generic attestation verification process has been described by wallet providers in the pilots. Those controls and generic steps are described in [RFC-002](https://github.com/EWC-consortium/eudi-wallet-rfcs/blob/main/ewc-rfc002-present-verifiable-credentials.md).
 
-EWC participating Business Registries don’t impose any data or attributes specific verification at this stage of the pilot; it is up to the Relying Party needs and requirements in the business or administrative process to decide.
+There is no data or attributes specific verification at this stage of the pilot; it is up to the Relying Party needs and requirements in the business or administrative process to decide.
+
+_À ce stade pas de limite sur le wallet pour qui peut présenter l'IBAN mais valider tests possible de devoir limiter l'accès au VP IBAN_
 
 ## 4. EUCC attributes
 
