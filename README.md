@@ -14,8 +14,7 @@
 4. [IBAN attributes](#4-iban-attestation-attributes)
 
    4.1. [Parties-related attributes](#41-parties-related-attributes)
-   
-4.2. [Minimum number of optional attributes](#42-minimum-number-of-optionnal-attributes)
+   4.2. [Minimum number of optional attributes](#42-minimum-number-of-optionnal-attributes)
 8. [Trust infrastructure details](#5-trust-infrastructure-details)
    
     5.1. [Trust requirements on the IBAN attestation from the perspective of company registration offices as authentic sources for the IBAN](#51-trust-requirements-on-the-iban-attestation-from-the-perspective-of-company-registration-offices-as-authentic-sources-for-the-iban)  
