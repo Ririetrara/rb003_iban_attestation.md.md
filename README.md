@@ -90,7 +90,7 @@ _À ce stade pas de limite sur le wallet pour qui peut présenter l'IBAN mais va
 
 ## 4. IBAN attributes
 
-IBAN attributes have been defined together by Archipels and _**WP 2.3**_ in the EWC pilot in accordance with the DSP2.
+IBAN attributes have been defined together by Archipels and _**WP 2.3**_ in the EWC pilot in accordance with the PSD2.
 
 This table contains the name of the attribute, its description, and whether the attribute is required or not.
 
@@ -114,7 +114,9 @@ This table contains the name of the attribute, its description, and whether the 
 | BIC | BIC or SWIFT code, as defined in ISO 9362, of the financial institution. | No |
 | clearing_number | Clearing number, only used in some countries, of the identification of the financial institution. | No |
 
-IBAN metadata have been adapted from the LPID metadata to be aligned with the usage of the IBAN attestation. These metadata can be found in the [LPID Rulebook](https://github.com/EWC-consortium/eudi-wallet-rulebooks-and-schemas/blob/main/rulebooks/rb001-legal-person-identification-data.md).
+
+Aligné avec les métadonnées des attestations org cred already defined (EUCC sig rights...)
+_IBAN metadata have been adapted from the LPID metadata to be aligned with the usage of the IBAN attestation_.
 
 This table contains the name of the metadatum, its description, and whether the metadatum is required or not.
 
@@ -170,7 +172,7 @@ It is the responsibility of Business Registries to include as many legal_represe
 
 ### 4.3 Minimum number of optional attributes
 
-There is no minimum number of optional attributes for the EUCC. Each Business Registry will have the responsibility to fill in the attributes when registered in their national registry.
+There is no minimum number of optional attributes for the EUCC. __Each Issuer will have the responsibility to fill in the attributes when provided by the original source.__
 
 ## 5. Trust infrastructure details
 
