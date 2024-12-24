@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
+1. [Introduction](#1.-introduction)
    
     1.1. [Scope](#scope)  
     1.2. [Background](#background)  
