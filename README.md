@@ -12,7 +12,9 @@
 2. [IBAN attestation Issuance process](#2-iban-attestation-issuance-process)  
 3. [IBAN attestation Verification process](#3-iban-attestation-verification-process)  
 4. [IBAN attributes](#4-iban-attestation-attributes)
+
    4.1. [Parties-related attributes](#41-parties-related-attributes)
+
    4.2. [Minimum number of optional attributes](#41-minimum-number-of-optionnal-attributes)
 8. [Trust infrastructure details](#5-trust-infrastructure-details)
    
