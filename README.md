@@ -90,7 +90,7 @@ _À ce stade pas de limite sur le wallet pour qui peut présenter l'IBAN mais va
 
 ## 4. IBAN attributes
 
-IBAN attributes have been defined together by Archipels and task... in the EWC pilot in accordance with the DSP2.
+IBAN attributes have been defined together by Archipels and _**WP 2.3**_ in the EWC pilot in accordance with the DSP2.
 
 This table contains the name of the attribute, its description, and whether the attribute is required or not.
 
