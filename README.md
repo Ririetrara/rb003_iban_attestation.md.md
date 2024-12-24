@@ -2,15 +2,15 @@
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
+1. [Introduction](#1-introduction)
    
-    1.1. [Scope](#scope)  
-    1.2. [Background](#background)  
-    1.3. [Goal of the IBAN Attestation](#goal-of-the-iban-attestation)  
-    1.4. [Key words](#key-words)  
-    1.5. [Terminology](#terminology)  
-2. [IBAN attestation Issuance process](#iban-attestation-issuance-process)  
-3. [IBAN attestation Verification process](#iban-attestation-verification-process)  
+    1.1. [Scope](#11-scope)  
+    1.2. [Background](#12-background)  
+    1.3. [Goal of the IBAN Attestation](#13-goal-of-the-iban-attestation)  
+    1.4. [Key words](#14-key-words)  
+    1.5. [Terminology](#15terminology)  
+2. [IBAN attestation Issuance process](#2-iban-attestation-issuance-process)  
+3. [IBAN attestation Verification process](#3-iban-attestation-verification-process)  
 4. [IBAN attributes](#iban-attestation-attributes)  
 5. [Trust infrastructure details](#trust-infrastructure-details)
    
