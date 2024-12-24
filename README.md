@@ -15,13 +15,13 @@
 
    4.1. [Parties-related attributes](#41-parties-related-attributes)
    4.2. [Minimum number of optional attributes](#41-minimum-number-of-optionnal-attributes)
-5. [Trust infrastructure details](#5-trust-infrastructure-details)
+6. [Trust infrastructure details](#5-trust-infrastructure-details)
    
     5.1. [Trust requirements on the IBAN attestation from the perspective of company registration offices as authentic sources for the IBAN](#51-trust-requirements-on-the-iban-attestation-from-the-perspective-of-company-registration-offices-as-authentic-sources-for-the-iban)  
     5.2. [Trust a signature or seal over a IBAN](#52-trust-a-signature-or-seal-over-an-iban)  
     5.3. [IBAN Provider Trusted List](#53-iban-provider-trusted-list)  
     5.4. [SD-JWT-compliant](#54-sd-jwt-compliant)  
-6. [References](#6-references)  
+7. [References](#6-references)  
 
 ## 1. Introduction
 
