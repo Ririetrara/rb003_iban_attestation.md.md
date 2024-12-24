@@ -172,7 +172,7 @@ It is the responsibility of Business Registries to include as many legal_represe
 
 ### 4.3 Minimum number of optional attributes
 
-There is no minimum number of optional attributes for the EUCC. __Each Issuer will have the responsibility to fill in the attributes when provided by the original source.__
+There is no minimum number of optional attributes for the EUCC. Each Issuer will have the responsibility to fill in the attributes when provided by the original source.
 
 ## 5. Trust infrastructure details
 
