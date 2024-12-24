@@ -14,9 +14,9 @@
 4. [IBAN attributes](#4-iban-attestation-attributes)  
 5. [Trust infrastructure details](#5-trust-infrastructure-details)
    
-    5.1. [Trust requirements on the EUCC attestation from the perspective of company registration offices as authentic sources for the EUCC](#51-trust-requirements-on-the-eucc-attestation-from-the-perspective-of-company-registration-offices-as-authentic-sources-for-the-eucc)  
-    5.2. [Trust a signature or seal over a EUCC](#52-trust-a-signature-or-seal-over-an-iban)  
-    5.3. [EUCC Provider Trusted List](#iban-provider-trusted-list)  
+    5.1. [Trust requirements on the IBAN attestation from the perspective of company registration offices as authentic sources for the IBAN](#51-trust-requirements-on-the-iban-attestation-from-the-perspective-of-company-registration-offices-as-authentic-sources-for-the-iban)  
+    5.2. [Trust a signature or seal over a IBAN](#52-trust-a-signature-or-seal-over-an-iban)  
+    5.3. [IBAN Provider Trusted List](#53-iban-provider-trusted-list)  
     5.4. [SD-JWT-compliant](#54-sd-jwt-compliant)  
 6. [References](#6-references)  
 
@@ -133,52 +133,24 @@ This table contains the name of the metadatum, its description, and whether the 
 
 The IBAN schema is available in the EWC schemas and rulebooks repository: [IBAN data schema](https://github.com/EWC-consortium/eudi-wallet-rulebooks-and-schemas/blob/main/data-schemas/ds002-iban-attestation.json).
 
-### 4.1 Registered address-related attributes
+### 4.1 Parties-related attributes
 
-This document defines the following attributes related to the registered address of the EUCC holder:
-
-- full_address
-- care_of
-- thorough_fare
-- locator_designator
-- post_code
-- post_name
-- post_office_box
-- locator_name
-- admin_unit_level_1
-- admin_unit_level_2
-
-The detailed attributes allow the EUCC attestation to represent the granularity of the elements describing a registered address as defined in the [EU Core Business Vocabulary](https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/#Address).. 
-
-### 4.2 Legal representative-related attributes
-
-This document defines the following attributes related to the legal representation of a company. This list of attributes allows EUCC issuers to use either or both list in order to describe a legal representative who is a natural person or a legal person. 
-
-**Attributes to define a natural person holding a legal representative right:**
+This document defines the following attributes related to the parties of the IBAN holder:
 
 - full_name
-- date_of_birth
-- nationality
-- signatory_rule
+- role
 
-**Attributes to define a legal person holding a legal representative right:**
-
-- legal_person_name
-- legal_person_id
-- legal_form_type
-- signatory_rule
-
-It is the responsibility of Business Registries to include as many legal_representative objects as present in their registry.
+The detailed attributes allow the IBAN attestation to encapsulate the individuals that have access to the legal entity's bank account.
 
 ### 4.3 Minimum number of optional attributes
 
-There is no minimum number of optional attributes for the EUCC. Each Issuer will have the responsibility to fill in the attributes when provided by the original source.
+There is no minimum number of optional attributes for the IBAN. Each Issuer will have the responsibility to fill in the attributes when provided by the original source.
 
 ## 5. Trust infrastructure details
 
-In this chapter, trust requirements and general considerations regarding the EUCC attestation itself are described.
+In this chapter, trust requirements and general considerations regarding the IBAN attestation itself are described.
 
-### 5.1 Trust requirements on the EUCC attestation from the perspective of company registration offices as authentic sources for the EUCC
+### 5.1 Trust requirements on the IBAN attestation from the perspective of company registration offices as authentic sources for the IBAN
 
 In the ARF 1.4, the following information for Pub-EAAs and QEAAs Providers is given.
 
@@ -188,34 +160,34 @@ Pub-EAAs and QEAAs Providers are trusted entities responsible to:
 - Issue attestations to the EUDI Wallet in a harmonized common format.
 - Make available information for Relying Parties to verify the validity of the attestation.
 
-The EUCC SHALL contain the qualified electronic signature or qualified electronic seal of the issuing body and adhere to the legal requirements defined in Annex VII of the Regulation (EU) 2024/1183.
+The IBAN SHALL contain the qualified electronic signature or qualified electronic seal of the issuing body and adhere to the legal requirements defined in Annex VII of the Regulation (EU) 2024/1183.
 
-The EUCC SHALL follow the SD-JWT format.
+The IBAN SHALL follow the SD-JWT format.
 
-It SHALL not be possible to log into company registers solely with the EUCC, since procedures legally require an individual person to act.
+It SHALL not be possible to log into company registers solely with the IBAN, since procedures legally require an individual person to act.
 
-EUCC Issuers SHALL follow the EUCC requirements and trust mechanisms defined by Authentic Sources on a national level.
+IBAN Issuers SHALL follow the IBAN requirements and trust mechanisms defined by Authentic Sources on a national level.
 Authentic Sources that are company registration offices need to accept each other's PUB-EAA attestations according to the regulation. Therefore, common legal trust mechanisms need to be established ifor the trust ecosystem to be trustworthy: 
 
-- The EUCC unique identifier SHALL be unique and agreed upon on EU and EES level.
-- There SHALL be one common schema for the EUCC which is accepted by all company registries offices.
-- Only mandatory metadata and attributes SHALL be present in the EUCC attestations.
-- The EUCC SHALL be in a machine-readable format defined in the ARF during its whole lifecycle.
-- The EUCC SHALL be in a format that can scale to additional/new legal forms.
-- The EUCC SHALL apply for all legal persons.
-- The issuer of the EUCC SHALL be responsible for its revocation. 
+- The IBAN unique identifier SHALL be unique and agreed upon on EU and EES level.
+- There SHALL be one common schema for the IBAN which is accepted by all company registries offices.
+- Only mandatory metadata and attributes SHALL be present in the IBAN attestations.
+- The IBAN SHALL be in a machine-readable format defined in the ARF during its whole lifecycle.
+- The IBAN SHALL be in a format that can scale to additional/new legal forms.
+- The IBAN SHALL apply for all legal persons.
+- The issuer of the IBAN SHALL be responsible for its revocation. 
 
-### 5.2 Trust a signature or seal over a EUCC
+### 5.2 Trust a signature or seal over a IBAN
 
-To trust a signature or seal over an EUCC, the Relying Party needs a mechanism to validate that the public key it uses to verify that signature or seal is trusted. OpenID4VP provides such mechanisms. However, additional details need to be analyzed to fully specify these mechanisms for EUCCs within the EUDI Wallet ecosystem and the trust anchor for it. It is assumed that this will be part of a detailed specification from a standardization authority.
+To trust a signature or seal over an IBAN, the Relying Party needs a mechanism to validate that the public key it uses to verify that signature or seal is trusted. OpenID4VP provides such mechanisms. However, additional details need to be analyzed to fully specify these mechanisms for IBANs within the EUDI Wallet ecosystem and the trust anchor for it. It is assumed that this will be part of a detailed specification from a standardization authority.
 
-### 5.3 EUCC Provider Trusted List
+### 5.3 IBAN Provider Trusted List
 
-For authenticating EUCCs, trust anchors will be used that are present in an EUCC issuer Provider Trusted List.
+For authenticating IBANs, trust anchors will be used that are present in an IBAN Issuer Provider Trusted List.
 
 ### 5.4 SD-JWT-compliant
 
-EUCC is fully compliant with [OpenID4VP] and [SD-JWT VC].
+IBAN is fully compliant with [OpenID4VP] and [SD-JWT VC].
 
 ## 6. References
 
