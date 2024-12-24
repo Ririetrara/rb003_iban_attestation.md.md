@@ -11,7 +11,10 @@
     1.5. [Terminology](#15terminology)  
 2. [IBAN attestation Issuance process](#2-iban-attestation-issuance-process)  
 3. [IBAN attestation Verification process](#3-iban-attestation-verification-process)  
-4. [IBAN attributes](#4-iban-attestation-attributes)  
+4. [IBAN attributes](#4-iban-attestation-attributes)
+
+   4.1. [Parties-related attributes](#41-parties-related-attributes)
+   4.2. [Minimum number of optional attributes](#41-minimum-number-of-optionnal-attributes)
 5. [Trust infrastructure details](#5-trust-infrastructure-details)
    
     5.1. [Trust requirements on the IBAN attestation from the perspective of company registration offices as authentic sources for the IBAN](#51-trust-requirements-on-the-iban-attestation-from-the-perspective-of-company-registration-offices-as-authentic-sources-for-the-iban)  
@@ -142,7 +145,7 @@ This document defines the following attributes related to the parties of the IBA
 
 The detailed attributes allow the IBAN attestation to encapsulate the individuals that have access to the legal entity's bank account.
 
-### 4.3 Minimum number of optional attributes
+### 4.2 Minimum number of optional attributes
 
 There is no minimum number of optional attributes for the IBAN. Each Issuer will have the responsibility to fill in the attributes when provided by the original source.
 
