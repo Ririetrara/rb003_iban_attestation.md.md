@@ -6,7 +6,7 @@
    
     1.1. [Scope](#scope)  
     1.2. [Background](#background)  
-    1.3. [Goal of the IBAN Attestation](#1.3-goal-of-the-iban-attestation)  
+    1.3. [Goal of the IBAN Attestation](#goal-of-the-iban-attestation)  
     1.4. [Key words](#key-words)  
     1.5. [Terminology](#terminology)  
 2. [IBAN attestation Issuance process](#iban-attestation-issuance-process)  
